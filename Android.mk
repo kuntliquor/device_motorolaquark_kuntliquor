@@ -38,7 +38,7 @@ ISDBTMM_IMAGES := \
 
 ISDBTMM_SYMLINKS := $(addprefix $(TARGET_OUT_ETC)/firmware/,$(notdir $(ISDBTMM_IMAGES)))
 $(ISDBTMM_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
-	@eho "IS DBT MM firmware link: $@"
+	@echo "IS DBT MM firmware link: $@"
 	@mkdir -p $(dir $@)
 	@rm -rf $@
 	$(hide) ln -sf /firmware/image/$(notdir $@) $@
