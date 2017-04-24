@@ -1,0 +1,3 @@
+set_prop(atfwd, ctl_default_prop)
+allow atfwd property_socket:sock_file write;
+allow atfwd diag_device:chr_file { ioctl read write open };

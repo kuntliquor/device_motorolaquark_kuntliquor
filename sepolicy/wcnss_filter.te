@@ -1,0 +1,4 @@
+allow wcnss_filter hci_attach_dev:chr_file rw_file_perms;
+
+set_prop(wcnss_filter, bluetooth_prop)
+allow wcnss_filter property_socket:sock_file write;
