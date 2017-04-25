@@ -25,4 +25,4 @@ LOCAL_MODULE := lights.$(TARGET_BOARD_PLATFORM)
 LOCAL_MODULE_TAGS := optional
 LOCAL_CFLAGS += -Wno-unused-parameter -Werror
 
-include $(BUILD_LIBRARY)
+include $(BUILD_SHARED_LIBRARY)
